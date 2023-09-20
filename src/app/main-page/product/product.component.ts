@@ -14,6 +14,8 @@ export class ProductComponent {
 
   constructor(private router: Router, private route: ActivatedRoute) {}
 
+  
+
   viewProductDetail(productId: number) {
     this.router.navigate(['/main/product', productId]);
   }

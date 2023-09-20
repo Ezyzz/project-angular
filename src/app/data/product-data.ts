@@ -88,4 +88,76 @@ export const products: ProductModel[] = [
         price: 4800,
         sex: 'male'
       },
+      {
+        id: 12,
+        image: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Evelynn_0.jpg',
+        name: 'Evelynn',
+        description: 'A seductive assassin who can turn invisible and strike fear into her enemies.',
+        price: 4800,
+        sex: 'female'
+    },
+    {
+        id: 13,
+        image: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_0.jpg',
+        name: 'Thresh',
+        description: 'A terrifying and sadistic jailer who collects the souls of his victims.',
+        price: 6300,
+        sex: 'male'
+    },
+    {
+        id: 14,
+        image: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sona_0.jpg',
+        name: 'Sona',
+        description: 'A mute musician who wields magical melodies to heal and harm her foes.',
+        price: 3150,
+        sex: 'female'
+    },
+    {
+        id: 15,
+        image: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kennen_0.jpg',
+        name: 'Kennen',
+        description: 'A yordle ninja who harnesses the power of electricity in battle.',
+        price: 4800,
+        sex: 'male'
+    },
+    {
+        id: 16,
+        image: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_0.jpg',
+        name: 'Caitlyn',
+        description: 'A sharpshooting sheriff known for her precision and long-range attacks.',
+        price: 4800,
+        sex: 'female'
+    },
+    {
+        id: 17,
+        image: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Maokai_0.jpg',
+        name: 'Maokai',
+        description: 'A sentient tree that can control plants and roots to trap his enemies.',
+        price: 3150,
+        sex: 'male'
+    },
+    {
+        id: 18,
+        image: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_0.jpg',
+        name: 'Akali',
+        description: 'A skilled ninja assassin with a passion for balance and justice.',
+        price: 4800,
+        sex: 'female'
+    },
+    {
+        id: 19,
+        image: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rumble_0.jpg',
+        name: 'Rumble',
+        description: 'A young inventor who pilots a powerful mech suit into battle.',
+        price: 4800,
+        sex: 'male'
+    },
+    {
+        id: 20,
+        image: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leona_0.jpg',
+        name: 'Leona',
+        description: 'A radiant warrior with the power of the sun, protecting her allies with her shield and sword.',
+        price: 3150,
+        sex: 'female'
+    },
 ];
