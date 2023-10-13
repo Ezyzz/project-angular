@@ -7,6 +7,9 @@ import { ProductDetailComponent } from './main-page/product-detail/product-detai
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { HomeComponent } from './main-page/home/home.component'; 
 import { AboutUsComponent } from './main-page/about-us/about-us.component';
+import { AdminMainComponent } from './admin-main/admin-main.component';
+import { ProductManageComponent } from './admin-main/product-manage/product-manage.component';
+
 
 const routes: Routes = [
   {
@@ -27,6 +30,14 @@ const routes: Routes = [
   {
     path: 'admin-login',
     component: AdminLoginComponent,
+  },
+  {
+    path: 'admin',
+    component: AdminMainComponent,
+    children: [
+      { path: '', redirectTo: 'product-manage', pathMatch: 'full' },
+      { path: 'product-manage', component: ProductManageComponent},
+    ]
   },
   { path: '', redirectTo: '/login', pathMatch: 'full' }, 
 ];

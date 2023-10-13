@@ -3,18 +3,18 @@
     <div class="position-absolute top-50 start-50 translate-middle">
       <div class="ezy-box">
         <div class="row text-center" *ngIf="isWrong">
-          <div class="col m-3"><strong class="text-danger">Wr0nG Pa5sw0rd_!!</strong></div>
+          <div class="col m-3"><strong class="text-danger"> !! Wrong Password !!</strong></div>
         </div>
         <form>
           <div class="mb-3">
             <label class="form-label">Admin Account</label>
-            <input type="email" class="form-control" id="adminID" [(ngModel)]="adminID" name="adminID">
+            <input type="email" class="form-control" id="adminName" [(ngModel)]="adminName" name="adminName">
           </div>
           <div class="mb-3">
             <label class="form-label">Password</label>
             <input type="password" class="form-control" id="password" [(ngModel)]="password" name="password">
           </div>
-          <button type="button" class="btn btn-ezy m-2">
+          <button type="button" class="btn-cyber m-2" (click)="CheckID()">
             <span class="btn__content">Access</span>
           </button>
         </form>

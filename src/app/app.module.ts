@@ -12,6 +12,10 @@ import { HomeComponent } from './main-page/home/home.component';
 import { AboutUsComponent } from './main-page/about-us/about-us.component';
 import { ProductComponent } from './main-page/product/product.component';
 import { ProductDetailComponent } from './main-page/product-detail/product-detail.component';
+import { AdminMainComponent } from './admin-main/admin-main.component';
+import { ProductManageComponent } from './admin-main/product-manage/product-manage.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 @NgModule({
@@ -23,12 +27,15 @@ import { ProductDetailComponent } from './main-page/product-detail/product-detai
     HomeComponent,
     AboutUsComponent,
     ProductComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    AdminMainComponent,
+    ProductManageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -8,7 +8,7 @@ import { admin } from '../data/admin-data'; // Import the admin array from the c
   styleUrls: ['./admin-login.component.css']
 })
 export class AdminLoginComponent {
-  adminID!: number;
+  adminName!: String;
   password: string = '';
   isWrong: boolean = false;
 
@@ -16,7 +16,7 @@ export class AdminLoginComponent {
 
   CheckID() {
     // Find admin with matching ID
-    const matchingAdmin = admin.find(a => a.id == this.adminID);
+    const matchingAdmin = admin.find(a => a.name == this.adminName);
     console.log(matchingAdmin);
     console.log(admin);
     

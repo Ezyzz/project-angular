@@ -1,0 +1,29 @@
+<div class="container">
+    <h2>Heroes Lists</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Sex</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products">
+          <td>{{ product.id }}</td>
+          <td>{{ product.name }}</td>
+          <td>{{ product.description }}</td>
+          <td>{{ product.price }}</td>
+          <td>{{ product.sex }}</td>
+          <td><button class="btn btn-warning" (click)="EDIT(product.id)">EDIT</button></td>
+          <td><button class="btn btn-danger" (click)="DELETE(product.id)">DELETE</button></td>
+  
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
