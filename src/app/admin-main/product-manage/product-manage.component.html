@@ -1,29 +1,28 @@
-<div class="container">
-    <h2>Heroes Lists</h2>
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Name</th>
-          <th>Description</th>
-          <th>Price</th>
-          <th>Sex</th>
-          <th></th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let product of products">
-          <td>{{ product.id }}</td>
-          <td>{{ product.name }}</td>
-          <td>{{ product.description }}</td>
-          <td>{{ product.price }}</td>
-          <td>{{ product.sex }}</td>
-          <td><button class="btn btn-warning" (click)="EDIT(product.id)">EDIT</button></td>
-          <td><button class="btn btn-danger" (click)="DELETE(product.id)">DELETE</button></td>
-  
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <p>Smart Farm IoT Web App</p>
+</head>
+<body>
+    <header>
+        <h1>Smart Farm IoT Web App</h1>
+    </header>
+    <div class="container">
+        <div class="card" style="width: 18rem;">
+            <img src="https://seecontrol.com/wp-content/uploads/2021/08/what-is-iot.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Smart Farm IoT</p>
+    </footer>
+</body>
+</html>
