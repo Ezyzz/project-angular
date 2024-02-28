@@ -7,8 +7,10 @@ header {
     background-color: #14c173;
     color: #fff;
     padding: 10px 0;
-    text-align: center;
-    
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    margin-bottom: 20px; /* Optional: Add some space below the header */
 }
 .container {
     width: 80%;
@@ -30,6 +32,16 @@ footer {
     width: 100%;
 }
 
+
 h1{
     margin-top: 15px;
+}
+.card {
+    display: inline-block; /* or use display: flex; */
+    margin-right: 50px; /* Optional: add some spacing between cards */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 18rem;
+    margin-left: 50px;
+
 }
