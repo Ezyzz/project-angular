@@ -4,13 +4,15 @@ body {
   padding: 0;
 }
 header {
-  background-color: #14c173;
-  color: #fff;
-  padding: 10px 0;
+  top: 0;
+  width: 100%;
   display: flex;
-  justify-content: center; /* Center content horizontally */
+  color: #fff;
+  position: fixed;
+  padding: 10px 0;
   align-items: center; /* Center content vertically */
-  margin-bottom: 20px; /* Optional: Add some space below the header */
+  justify-content: center; /* Center content horizontally */
+  background-color: #14c173;
 }
 
 .icon {
@@ -18,8 +20,8 @@ header {
   right: 20px;
 }
 .container {
-  width: 80%;
-  margin: 20px auto;
+  width: 100%;
+  margin: 100px auto;
 }
 .sensor-data {
   margin-bottom: 20px;
@@ -28,13 +30,13 @@ header {
   margin-bottom: 20px;
 }
 footer {
-  background-color: #14c173;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
-  position: fixed;
   bottom: 0;
   width: 100%;
+  color: #fff;
+  position: fixed;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #14c173;
 }
 
 h1 {
@@ -43,8 +45,8 @@ h1 {
 .card {
   display: inline-block; /* or use display: flex; */
   margin-right: 50px; /* Optional: add some spacing between cards */
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   width: 18rem;
   margin-left: 50px;
 }
