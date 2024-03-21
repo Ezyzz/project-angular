@@ -3,6 +3,9 @@ body {
   margin: 0;
   padding: 0;
   padding-top: 70px;
+  background: url("../../assets/img/103040744-2000-ffe538279fd7442c80bc249a3558cbf7.jpg")
+    no-repeat center fixed;
+  background-size: cover;
 }
 
 header {
@@ -34,4 +37,10 @@ header {
 .icon {
   position: absolute;
   right: 20px;
+}
+
+.back-button {
+  position: absolute;
+  top: 100px;
+  left: 20px;
 }
