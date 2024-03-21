@@ -15,6 +15,7 @@ import { ProductDetailComponent } from './main-page/product-detail/product-detai
 import { AdminMainComponent } from './admin-main/admin-main.component';
 import { ProductManageComponent } from './admin-main/product-manage/product-manage.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SettingsPageComponent } from './settings-page/settings-page.component';
 
 
 
@@ -30,6 +31,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProductDetailComponent,
     AdminMainComponent,
     ProductManageComponent,
+    SettingsPageComponent,
   ],
   imports: [
     BrowserModule,

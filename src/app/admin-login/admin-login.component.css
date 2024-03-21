@@ -1,48 +1,47 @@
 .main {
-    height: 100vh;
-    width: 100vw;
-    border: 0px solid red;
-    background: url('https://wallpapers-clan.com/wp-content/uploads/2023/11/aesthetic-farm-cow-desktop-wallpaper-preview.jpg') no-repeat center center fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+  height: 100vh;
+  width: 100vw;
+  border: 0px solid red;
+  background: url("https://wallpapers-clan.com/wp-content/uploads/2023/11/aesthetic-farm-cow-desktop-wallpaper-preview.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 /* border */
 .ezy-box {
-    border: red;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
-    border-radius: 8px;
-    width: 300px;
-    height: auto;
+  border: red;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  width: 300px;
+  height: auto;
 }
 
 .btn-ezy {
-    background-color: #67ffe1; 
-    color: #000; 
-    border: 2px solid #67ffe1; 
-    border-radius: 8px; 
-    padding: 10px 20px; 
-    font-size: 18px; 
-    cursor: pointer; 
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .btn-ezy:hover {
-    background-color: #007a63;
-    color: #fff; 
-  }
-  
-  .btn-ezy:focus {
-    outline: none;
-    box-shadow: none; 
-  }
-  
+  background-color: #67ffe1;
+  color: #000;
+  border: 2px solid #67ffe1;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
+.btn-ezy:hover {
+  background-color: #007a63;
+  color: #fff;
+}
+
+.btn-ezy:focus {
+  outline: none;
+  box-shadow: none;
+}
