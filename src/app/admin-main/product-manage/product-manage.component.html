@@ -32,10 +32,17 @@
         </div>
       </div>
     </div>
+
+    <div class="card create-card">
+      <button class="btn btn-icon" (click)="createNewCompany()">
+        <i class="fa fa-plus"></i> Create New Company
+      </button>
+    </div>
+    
   </div>
 
 </body>
-<footer>
+<footer *ngIf="showFooter">
   <p>&copy; 2024 Smart Farm IoT</p>
 </footer>
 

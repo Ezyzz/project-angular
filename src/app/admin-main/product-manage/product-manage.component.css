@@ -3,8 +3,9 @@ body {
   margin: 0;
   padding: 0;
   padding-top: 70px;
+  padding-bottom: 100px; /* Add padding to the bottom of the body */
   background-color: #fff; /* Set background color to white */
-  height: 100vh; /* Set body height to 100% of viewport height */
+  min-height: 100vh; /* Set minimum height of the body to 100% of viewport height */
 }
 
 /* Set card background color to the specified color */
@@ -128,6 +129,7 @@ body {
 @media screen and (max-width: 575px) {
   .container {
     max-width: 400px; /* Adjust as needed */
+    padding-bottom: 50px;
   }
   .card {
     width: calc(50% - 20px); /* 50% width for each card with margin */
@@ -153,7 +155,7 @@ header {
 }
 .container {
   width: 100%;
-  margin: 20px auto 100px;
+  margin: 20px auto 100px ; /* Adjust margin to add space below the last card */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -169,12 +171,14 @@ header {
 footer {
   bottom: 0;
   width: 100%;
-  color: #fff;
+  color: #000; /* Change text color to black */
   position: fixed;
-  padding: 10px 0;
+  padding: 5px 0; /* Adjust padding values */
   text-align: center;
-  background-color: #14c173;
+  background-color: #fff; /* Change background color to white */
   z-index: 1000;
+  height: 30px; /* Adjust height */
+  font-size: 14px; /* Adjust font size */
 }
 h1 {
   margin-top: 15px;
