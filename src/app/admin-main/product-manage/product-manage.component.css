@@ -36,20 +36,28 @@ body {
   color: #fff; /* Set text color to white */
 }
 
-/* Set card body style */
 .card-body {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
+  justify-content: center;
+  align-items: center;
   padding: 10px;
 }
 
-/* Set card text color to white */
-.card h5, .card p {
-  color: #fff; /* Set text color to white */
-  font-size: 1.5em; /* Increase font size */
+.card-title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.card h5 {
+  color: #fff;
+  font-size: 1.2em;
+  overflow: hidden; /* Hide overflow text */
+  white-space: nowrap; /* Prevent wrapping of text */
+  text-overflow: ellipsis; /* Display ellipsis for overflow text */
 }
 
 .toggle-button {
@@ -61,11 +69,11 @@ body {
 .toggle-content {
   display: flex;
   align-items: center;
-  margin-right: 10px; /* Add margin to separate the text from the switch */
+  margin: auto; /* Add margin to separate the text from the switch */
 }
 
 .toggle-content span {
-  margin-right: 5px; /* Add margin to separate the text from the switch */
+  margin: 10px; /* Add margin to separate the text from the switch */
   display: inline-block; /* Ensure the span behaves as a block element */
 }
 
@@ -97,9 +105,31 @@ body {
   transform: translateX(20px) translateY(-50%); /* Adjust position */
 }
 
+.create-card {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #54B37A; /* Add border to the card */
+  border-radius: 8px; /* Add border radius to the card */
+  padding: 10px; /* Add padding to the card */
+}
 
+.add-icon {
+  text-align: center; /* Center align the content */
+}
 
+.add-icon i {
+  font-size: 32px; /* Adjust icon size */
+  color: #ffffff; /* Set icon color */
+}
 
+.add-icon span {
+  display: block; /* Display the text as a block element */
+  margin-top: 5px; /* Add spacing between the icon and text */
+  font-size: 16px; /* Adjust text size */
+  color: #ffffff; /* Set text color */
+}
 
 
 
@@ -109,6 +139,7 @@ body {
 @media screen and (min-width: 992px) {
   .container {
     max-width: 1200px; /* Adjust as needed */
+    padding-bottom: 50px;
   }
   .card {
     width: calc(25% - 20px); /* 25% width for each card with margin */
@@ -119,6 +150,7 @@ body {
 @media screen and (max-width: 991px) {
   .container {
     max-width: 800px; /* Adjust as needed */
+    padding-bottom: 50px;
   }
   .card {
     width: calc(33.33% - 20px); /* 33.33% width for each card with margin */
