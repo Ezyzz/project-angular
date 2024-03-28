@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <p>Smart Farm IoT Web App</p>
-  </head>
+
 
   <header>
     <div class="profile">
@@ -26,143 +18,45 @@
     </div>
   </header>
 
-  <body>
-    <div class="container">
-      <div class="card">
-        <img
-          src="https://seecontrol.com/wp-content/uploads/2021/08/what-is-iot.jpeg"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+<header>
+  <h1>Smart Farm IoT Web App</h1>
+  <div class="icon"><i class="fa fa-gear" style="font-size: 36px"></i></div>
+</header>
+
+<body>
+  
+  <div class="container">
+    <div class="card" *ngFor="let company of Companys">
+      <div class="card-header">
+        <button class="btn btn-icon" (click)="viewCompanyDetail(company.id)">
+          <i class="fa fa-bars"></i>
+        </button>
       </div>
-      <div class="card">
-        <img
-          src="https://seecontrol.com/wp-content/uploads/2021/08/what-is-iot.jpeg"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="https://seecontrol.com/wp-content/uploads/2021/08/what-is-iot.jpeg"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="https://seecontrol.com/wp-content/uploads/2021/08/what-is-iot.jpeg"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="https://seecontrol.com/wp-content/uploads/2021/08/what-is-iot.jpeg"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="https://seecontrol.com/wp-content/uploads/2021/08/what-is-iot.jpeg"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="https://seecontrol.com/wp-content/uploads/2021/08/what-is-iot.jpeg"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="https://seecontrol.com/wp-content/uploads/2021/08/what-is-iot.jpeg"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="https://seecontrol.com/wp-content/uploads/2021/08/what-is-iot.jpeg"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div class="card-body">
+        <h5 class="card-title">{{ company.name }}</h5>
+        <div class="toggle-button" (click)="toggleSwitch(company)" [ngClass]="{ 'active': company.switch }">
+          <div class="toggle-content">
+            <span>View:</span>
+            <div class="toggle-slider" [ngStyle]="{ 'background-color': company.switch ? '#14c173' : '#ff4d4f', 'transform': company.switch ? 'translate(0px, -50%)' : 'translate(0, -50%)' }"></div>
+          </div>
         </div>
       </div>
     </div>
-  </body>
+
+    <div class="card create-card" (click)="createNewCompany()">
+      <div class="add-icon">
+        <i class="fa fa-plus"></i>
+        <span>ADD NEW DEVICE</span>
+      </div>
+    </div>
+
+    
+  </div>
+
+</body>
+<footer *ngIf="showFooter">
+  <p>&copy; 2024 Smart Farm IoT</p>
+</footer>
+
 </html>
+

@@ -3,14 +3,179 @@ body {
   margin: 0;
   padding: 0;
   padding-top: 70px;
+  padding-bottom: 100px; /* Add padding to the bottom of the body */
+  background-color: #fff; /* Set background color to white */
+  min-height: 100vh; /* Set minimum height of the body to 100% of viewport height */
 }
+
+/* Set card background color to the specified color */
+.card {
+  margin: 10px; /* Increase margin between cards */
+  width: 200px; /* Set card width */
+  height: 200px; /* Set card height to make it square */
+  background-color: #54B37A; /* Set background color to #54B37A */
+  color: #fff; /* Set text color to white */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Set card header style */
+.card-header {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  padding: 10px;
+}
+
+/* Set card button style */
+.btn-icon {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-right: auto; /* Push button to the left */
+  color: #fff; /* Set text color to white */
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.card-title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.card h5 {
+  color: #fff;
+  font-size: 1.2em;
+  overflow: hidden; /* Hide overflow text */
+  white-space: nowrap; /* Prevent wrapping of text */
+  text-overflow: ellipsis; /* Display ellipsis for overflow text */
+}
+
+.toggle-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggle-content {
+  display: flex;
+  align-items: center;
+  margin: auto; /* Add margin to separate the text from the switch */
+}
+
+.toggle-content span {
+  margin: 10px; /* Add margin to separate the text from the switch */
+  display: inline-block; /* Ensure the span behaves as a block element */
+}
+
+.toggle-slider {
+  width: 40px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  position: relative;
+  top: 10px; /* Move down by 2 pixels */
+  transition: transform 0.3s, background-color 0.3s;
+  border: 1px solid #ffffff7c; /* Add white color border */
+}
+
+.toggle-slider:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 2px; /* Adjust position */
+  transform: translateY(-50%);
+  transition: transform 0.3s;
+}
+
+.toggle-button.active .toggle-slider:before {
+  transform: translateX(20px) translateY(-50%); /* Adjust position */
+}
+
+.create-card {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #54B37A; /* Add border to the card */
+  border-radius: 8px; /* Add border radius to the card */
+  padding: 10px; /* Add padding to the card */
+}
+
+.add-icon {
+  text-align: center; /* Center align the content */
+}
+
+.add-icon i {
+  font-size: 32px; /* Adjust icon size */
+  color: #ffffff; /* Set icon color */
+}
+
+.add-icon span {
+  display: block; /* Display the text as a block element */
+  margin-top: 5px; /* Add spacing between the icon and text */
+  font-size: 16px; /* Adjust text size */
+  color: #ffffff; /* Set text color */
+}
+
+
+
+
+
+/* Styles for larger screens (e.g., desktops) */
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 1200px; /* Adjust as needed */
+    padding-bottom: 50px;
+  }
+  .card {
+    width: calc(25% - 20px); /* 25% width for each card with margin */
+  }
+}
+
+/* Styles for medium screens (e.g., tablets) */
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 800px; /* Adjust as needed */
+    padding-bottom: 50px;
+  }
+  .card {
+    width: calc(33.33% - 20px); /* 33.33% width for each card with margin */
+  }
+}
+
+/* Styles for small screens (e.g., phones) */
+@media screen and (max-width: 575px) {
+  .container {
+    max-width: 400px; /* Adjust as needed */
+    padding-bottom: 50px;
+  }
+  .card {
+    width: calc(50% - 20px); /* 50% width for each card with margin */
+  }
+}
+
+
 header {
   top: 0;
   width: 100%;
   display: flex;
   color: #fff;
   position: fixed;
-  padding: 10px 0;
+  padding: 3px 0; /* Adjust the padding values here */
   align-items: center; /* Center content vertically */
   justify-content: center; /* Center content horizontally */
   background-color: #14c173;
@@ -36,11 +201,12 @@ header {
 }
 .container {
   width: 100%;
-  margin: 20px auto 100px;
+  margin: 20px auto 100px ; /* Adjust margin to add space below the last card */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   overflow-y: auto;
+  background-color: #fff;
 }
 .sensor-data {
   margin-bottom: 20px;
@@ -48,11 +214,20 @@ header {
 .actuator-control {
   margin-bottom: 20px;
 }
+
+footer {
+  bottom: 0;
+  width: 100%;
+  color: #000; /* Change text color to black */
+  position: fixed;
+  padding: 5px 0; /* Adjust padding values */
+  text-align: center;
+  background-color: #fff; /* Change background color to white */
+  z-index: 1000;
+  height: 30px; /* Adjust height */
+  font-size: 14px; /* Adjust font size */
+}
+
 h1 {
   margin-top: 15px;
-}
-.card {
-  margin: 5px;
-  width: 350px;
-  height: 450px;
 }
