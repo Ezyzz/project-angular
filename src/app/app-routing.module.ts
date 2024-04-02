@@ -9,7 +9,6 @@ import { HomeComponent } from './main-page/home/home.component';
 import { AboutUsComponent } from './main-page/about-us/about-us.component';
 import { AdminMainComponent } from './admin-main/admin-main.component';
 import { ProductManageComponent } from './admin-main/product-manage/product-manage.component';
-import { SettingsPageComponent } from './settings-page/settings-page.component';
 
 const routes: Routes = [
   {
@@ -40,7 +39,6 @@ const routes: Routes = [
     ],
   },
   { path: '', redirectTo: '/login', pathMatch: 'full' },
-  { path: 'settings', component: SettingsPageComponent },
 ];
 
 @NgModule({
