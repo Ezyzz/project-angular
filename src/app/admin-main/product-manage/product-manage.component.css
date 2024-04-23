@@ -3,37 +3,34 @@ body {
   margin: 0;
   padding: 0;
   padding-top: 70px;
-  padding-bottom: 100px; /* Add padding to the bottom of the body */
-  background-color: #fff; /* Set background color to white */
-  min-height: 100vh; /* Set minimum height of the body to 100% of viewport height */
+  padding-bottom: 100px; 
+  background-color: #fff; 
+  min-height: 100vh; 
 }
 
-/* Set card background color to the specified color */
 .card {
-  margin: 10px; /* Increase margin between cards */
-  width: 200px; /* Set card width */
-  height: 200px; /* Set card height to make it square */
-  background-color: #54B37A; /* Set background color to #54B37A */
-  color: #fff; /* Set text color to white */
+  margin: 10px; 
+  width: 200px; 
+  height: 200px;
+  background-color: #54B37A; 
+  color: #fff; 
   display: flex;
   flex-direction: column;
 }
 
-/* Set card header style */
 .card-header {
   display: flex;
-  align-items: center; /* Align items vertically */
+  align-items: center; 
   padding: 10px;
 }
 
-/* Set card button style */
 .btn-icon {
   background-color: transparent;
   border: none;
   cursor: pointer;
   padding: 0;
-  margin-right: auto; /* Push button to the left */
-  color: #fff; /* Set text color to white */
+  margin-right: auto; 
+  color: #fff; 
 }
 
 .card-body {
@@ -55,9 +52,9 @@ body {
 .card h5 {
   color: #fff;
   font-size: 1.2em;
-  overflow: hidden; /* Hide overflow text */
-  white-space: nowrap; /* Prevent wrapping of text */
-  text-overflow: ellipsis; /* Display ellipsis for overflow text */
+  overflow: hidden; 
+  white-space: nowrap; 
+  text-overflow: ellipsis; 
 }
 
 .toggle-button {
@@ -69,12 +66,12 @@ body {
 .toggle-content {
   display: flex;
   align-items: center;
-  margin: auto; /* Add margin to separate the text from the switch */
+  margin: auto; 
 }
 
 .toggle-content span {
-  margin: 10px; /* Add margin to separate the text from the switch */
-  display: inline-block; /* Ensure the span behaves as a block element */
+  margin: 10px; 
+  display: inline-block; 
 }
 
 .toggle-slider {
@@ -83,9 +80,9 @@ body {
   border-radius: 20px;
   background-color: #fff;
   position: relative;
-  top: 10px; /* Move down by 2 pixels */
+  top: 10px; 
   transition: transform 0.3s, background-color 0.3s;
-  border: 1px solid #ffffff7c; /* Add white color border */
+  border: 1px solid #ffffff7c; 
 }
 
 .toggle-slider:before {
@@ -96,13 +93,13 @@ body {
   background-color: #fff;
   position: absolute;
   top: 50%;
-  left: 2px; /* Adjust position */
+  left: 2px; 
   transform: translateY(-50%);
   transition: transform 0.3s;
 }
 
 .toggle-button.active .toggle-slider:before {
-  transform: translateX(20px) translateY(-50%); /* Adjust position */
+  transform: translateX(20px) translateY(-50%); 
 }
 
 .create-card {
@@ -110,61 +107,60 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #54B37A; /* Add border to the card */
-  border-radius: 8px; /* Add border radius to the card */
-  padding: 10px; /* Add padding to the card */
+  border: 2px solid #54B37A;
+  border-radius: 8px; 
+  padding: 10px; 
 }
 
 .add-icon {
-  text-align: center; /* Center align the content */
+  text-align: center; 
 }
 
 .add-icon i {
-  font-size: 32px; /* Adjust icon size */
-  color: #ffffff; /* Set icon color */
+  font-size: 32px; 
+  color: #ffffff; 
 }
 
 .add-icon span {
-  display: block; /* Display the text as a block element */
-  margin-top: 5px; /* Add spacing between the icon and text */
-  font-size: 16px; /* Adjust text size */
-  color: #ffffff; /* Set text color */
+  display: block; 
+  margin-top: 5px; 
+  font-size: 16px; 
+  color: #ffffff;
 }
 
 
 
 
 
-/* Styles for larger screens (e.g., desktops) */
+
 @media screen and (min-width: 992px) {
   .container {
-    max-width: 1200px; /* Adjust as needed */
+    max-width: 1200px; 
     padding-bottom: 50px;
   }
   .card {
-    width: calc(25% - 20px); /* 25% width for each card with margin */
+    width: calc(25% - 20px); 
   }
 }
 
-/* Styles for medium screens (e.g., tablets) */
 @media screen and (max-width: 991px) {
   .container {
-    max-width: 800px; /* Adjust as needed */
+    max-width: 800px; 
     padding-bottom: 50px;
   }
   .card {
-    width: calc(33.33% - 20px); /* 33.33% width for each card with margin */
+    width: calc(33.33% - 20px); 
   }
 }
 
-/* Styles for small screens (e.g., phones) */
+
 @media screen and (max-width: 575px) {
   .container {
-    max-width: 400px; /* Adjust as needed */
+    max-width: 400px; 
     padding-bottom: 50px;
   }
   .card {
-    width: calc(50% - 20px); /* 50% width for each card with margin */
+    width: calc(50% - 20px);
   }
 }
 
@@ -175,9 +171,9 @@ header {
   display: flex;
   color: #fff;
   position: fixed;
-  padding: 3px 0; /* Adjust the padding values here */
-  align-items: center; /* Center content vertically */
-  justify-content: center; /* Center content horizontally */
+  padding: 3px 0; 
+  align-items: center;
+  justify-content: center; 
   background-color: #14c173;
   z-index: 1000;
 }
@@ -201,7 +197,7 @@ header {
 }
 .container {
   width: 100%;
-  margin: 20px auto 100px ; /* Adjust margin to add space below the last card */
+  margin: 20px auto 100px ; 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -218,14 +214,14 @@ header {
 footer {
   bottom: 0;
   width: 100%;
-  color: #000; /* Change text color to black */
+  color: #000; 
   position: fixed;
-  padding: 5px 0; /* Adjust padding values */
+  padding: 5px 0; 
   text-align: center;
-  background-color: #fff; /* Change background color to white */
+  background-color: #fff; 
   z-index: 1000;
-  height: 30px; /* Adjust height */
-  font-size: 14px; /* Adjust font size */
+  height: 30px; 
+  font-size: 14px; 
 }
 
 h1 {

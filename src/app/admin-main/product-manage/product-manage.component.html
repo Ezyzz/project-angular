@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
   <header>
     <div class="profile">
       <img
@@ -11,25 +10,14 @@
       />
     </div>
     <h1>Smart Farm IoT Web App</h1>
-    <div class="icon">
-      <a routerLink="/settings"
-        ><i class="fa fa-gear text-white" style="font-size: 36px"></i
-      ></a>
-    </div>
   </header>
 
-<header>
-  <h1>Smart Farm IoT Web App</h1>
-  <div class="icon"><i class="fa fa-gear" style="font-size: 36px"></i></div>
-</header>
-
 <body>
-  
   <div class="container">
     <div class="card" *ngFor="let company of Companys">
       <div class="card-header">
         <button class="btn btn-icon" (click)="viewCompanyDetail(company.id)">
-          <i class="fa fa-bars"></i>
+          <i class="material-icons">menu</i>
         </button>
       </div>
       <div class="card-body">
@@ -45,15 +33,14 @@
 
     <div class="card create-card" (click)="createNewCompany()">
       <div class="add-icon">
-        <i class="fa fa-plus"></i>
+        <i class="material-icons">add</i>
         <span>ADD NEW DEVICE</span>
       </div>
     </div>
 
-    
   </div>
-
 </body>
+
 <footer *ngIf="showFooter">
   <p>&copy; 2024 Smart Farm IoT</p>
 </footer>
